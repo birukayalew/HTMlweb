@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Biruk CV</title>
+    <link rel="shortcut icon" href="./Asset/i.jpg" type="image/x-icon">
 </head>
 <body>
     <hr>
     <a href="index.html">Home</a> |
     <a href="contact.html">Contact</a>
+    <a href="gallary.html">Gallary</a>
+    <a href="about.html">About</a>
     <hr>
     <table cellspacing="10">
         <tr>
@@ -28,19 +31,29 @@
     <!-- Contact form -->
     <h3>Leave your comment here</h3>
     <form action="mailto:se.biruk.ayalew@gmail.com" method="POST" enctype="utf-8">
-        <label for="fName">First Name</label>&nbsp;&nbsp;
-        <input type="text" name="fName" id="fName"><br>
-        <label for="lName">Last Name</label>&nbsp;&nbsp;
-        <input type="text" name="lName" id="lName"><br>
-        <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="email" name="email" id="email"><br>
-        <select name="Continent" id=""><br>
-            <option value="Asia">Asia</option>
-            <option value="Africa">Africa</option>
-        </select><br>
-        <label for="detail">What do you say</label><br>
-        <textarea name="detaildetail" id="" cols="30" rows="10"></textarea><br>
-        <input type="submit" name="submit">
+        <table>
+            <tr>
+                <td><label for="fName">First Name</label>&nbsp;&nbsp;</td>
+                <td><input type="text" name="fName" id="fName" pattern="[a-z]{9}"><br></td>
+            </tr>
+            <tr>
+                <td><label for="lName">Last Name</label>&nbsp;&nbsp;</td>
+                <td><input type="text" name="lName" id="lName" pattern="[a-z]{9}"><br></td>
+            </tr>
+            <tr>
+                <td> <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><input type="email" name="email" id="email"><br></td>
+            </tr>
+            <tr>
+                <select name="Continent" id=""><br>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                </select><br>
+            </tr>
+            <tr><label for="detail">What do you say</label><br></tr>
+            <tr><textarea name="detaildetail" id="" cols="30" rows="10"></textarea><br></tr>
+            <tr><input type="submit" name="submit"></tr>
+        </table>
     </form>
     <hr>
     <hr>
