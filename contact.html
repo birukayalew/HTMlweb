@@ -17,59 +17,57 @@
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </div>
-    <table>
-        <tr>
-            <td><img src="./Asset/Images/sador.jpg" alt="Biruk Ayalew Profile Picture" width="300" height="300"></td>
-            <td><h1>Biruk Ayalew</h1>
-                <h2>Student, Addis Ababa Institiute of technology</h2>
-                <p>Hello there,</p>
-                <p>
-                    <pre>
-                    I am biruk. I am second year <strong>Software Enginnering</strong> student 
-                    at Addis Ababa Universitiy.I have taken <strong>Java</strong> and <strong>Python</strong> 
-                    programming languages. I have worked on projects so that 
-                    I could get experience on them. I have also participated 
-                    in <strong>Developer Students Club (DSC)</strong> and I was able to work 
-                    on Dart language-Flutter. Generally, I am enthusiastic 
-                    to work on different programming languages.
-                </pre>
-                </p>
-            </td>
-        </tr>
-    </table>
-    <hr>
+    <div id="about">
+        <div id="sador">
+            <img src="./Asset/Images/sador.jpg" alt="Biruk Ayalew Profile Picture" width="200" height="200">
+        </div>
+        <div id="talk">
+            <h1>Biruk Ayalew</h1>
+            <h2>Student, Addis Ababa Institiute of technology</h2>
+            <p>Hello there,</p>
+            <p>
+                I am biruk. I am second year <strong>Software Enginnering</strong> student <br>
+                at Addis Ababa Universitiy.I have taken <strong>Java</strong> and <strong>Python</strong><br>
+                programming languages. I have worked on projects so that <br>
+                I could get experience on them. I have also participated <br>
+                in <strong>Developer Students Club (DSC)</strong> and I was able to work <br>
+                on Dart language-Flutter. Generally, I am enthusiastic <br>
+                to work on different programming languages.
+            </p>
+        </div>
+    </div>
+    
+   
     <!-- Contact form -->
-    <h3>Leave your comment here</h3>
-    <table>
-    <form action="mailto:se.biruk.ayalew@gmail.com" method="POST" enctype="utf-8">
-        <table cellspacing="">
-            <tr>
-                <td>
-                    <form action="mailto:se.biruk.ayalew@gmail.com" method="POST" enctype="utf-8">
-                        <table>
-                            <tr>
-                                <td><label for="fName">First Name</label><br><br></td>
-                                <td><input type="text" name="fName" id="fName" pattern="[A-Za-z]{1,15}" required
-                                    title="your name should have at least one or atmost fifty letters"><br><br></td>
-                            </tr>
-                            <tr>
-                                <td><label for="lName">Last Name</label><br><br></td>
-                                <td><input type="text" name="lName" id="lName" pattern="[A-Za-z]{1,15}" required
-                                    title="your name should have at least one or atmost fifty letters"><br><br></td>
-                            </tr>
-                            <tr>
-                                <td><label for="email">Email:</label><br><br></td>
-                                <td><input type="email" name="email" id="email" required><br><br></td>
-                            </tr>
-                            <tr>
-                                <td><label for="pass">Password</label><br><br></td>
-                                <td><input type="password" name="Password" id="" pattern="[A-Za-z\d.&]{8,15}" 
-                                    title="Enter letters and numbers only and the password should contain greater than 8 characterstics"
-                                    placeholder="********"><br><br></td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
+    <div id="formation">
+        <div id="comment">
+            <h3>Leave your comment here</h3>
+            <form action="mailto:se.biruk.ayalew@gmail.com" method="POST" enctype="utf-8">
+                <table>
+                    <tr>
+                        <td><label for="fName">First Name</label><br><br></td>
+                        <td><input type="text" name="fName" id="fName" pattern="[A-Za-z]{1,15}" required
+                            title="your name should have at least one or atmost fifty letters"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lName">Last Name</label><br><br></td>
+                        <td><input type="text" name="lName" id="lName" pattern="[A-Za-z]{1,15}" required
+                            title="your name should have at least one or atmost fifty letters"><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label><br><br></td>
+                        <td><input type="email" name="email" id="email" required><br><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label><br><br></td>
+                        <td><input type="password" name="Password" id="" pattern="[A-Za-z\d.&]{8,15}" 
+                            title="Enter letters and numbers only and the password should contain greater than 8 characterstics"
+                            placeholder="********"><br><br></td>
+                    </tr>
+                </table>
+                <table>
+                        <tr>
+                            <td>
                                 <select name="Continent">
                                     <option value="Asia">Asia</option>
                                     <option value="Africa" selected>Africa</option>
@@ -79,58 +77,69 @@
                                     <option value="Europe">Europe</option>
                                     <option value="Australia">Australia</option>
                                 </select><br><br>
-                            </tr><br>
-                            <tr><label for="detail">What do you say?</label><br><br></tr>
-                            <tr><textarea name="detaildetail" id="" cols="50" rows="10" required
-                                title="Leave a message please" placeholder="write something interesting here..."></textarea><br><br></tr>
-                            <tr>
-                                <td>
-                                    <label for="rating">Give rating from 1 to 10 for this CV&nbsp;&nbsp;&nbsp;</label><br><br>
-                                </td>
-                                <td>
-                                    <select name="Rating">
-                                        <option value="1" >1</option>
-                                        <option value="2" >2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10" selected>10</option>
-                                    </select><br><br>
-                                </td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <td><label>Recommend a better CV by entering its URL</label><br><br></td>
-                                <td><input type="url" name="" id=""><br><br></td>
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="submit"></tr>
-                                        &nbsp;&nbsp;
-                        </table>
-                    </form>
-                </td>
-                <td>
-                    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" 
-                        id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a 
-                        href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;
-                        height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:
-                        500px;width:600px;}</style></div>
-                </td>
-            </tr>
+                            </td>
+                            
+                        </tr><br>
+                        <tr>
+                            <td>
+                                <label for="detail">What do you say?</label><br><br>
+                            </td></tr>
+                        <tr>
+                            <td>
+                                <textarea name="detaildetail" id="" cols="35" rows="10" required
+                            title="Leave a message please" placeholder="write something interesting here..."></textarea><br><br>
+                            </td></tr>
+                        <tr>
+                            <td>
+                                <label for="rating">Give rating from 1 to 10 for this CV</label><br><br>
+                            </td>
+                            <td>
+                                <select name="Rating">
+                                    <option value="1" >1</option>
+                                    <option value="2" >2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10" selected>10</option>
+                                </select><br><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Recommend a better CV by entering its URL</label><br><br></td>
+                            <td><input type="url" name="" id=""><br><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" name="submit">
+                            </td></tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
         </table>
-    <hr>
+        </div>
+        <div id="map">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" 
+                id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a 
+                href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;
+                height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:
+                500px;width:600px;}</style></div>
+        </div>
+        <div id="clear"></div>
+    </div>
+    <div class="bottom">
     <a href="https://www.facebook.com/" target="_blank" >Facebook</a> |
     <a href="https://twitter.com/login" target="_blank" >Twitter</a>
-    <hr>
-    <p align="center">Developed by Biruk Ayalew &copy;2020</p>
+    </div>
+    <div class="copyright">
+        <p>Developed by Biruk Ayalew &copy;2020</p>
+    </div>
     
 </body>
 </html>
