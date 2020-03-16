@@ -41,87 +41,73 @@
     <!-- Contact form -->
     <div id="formation">
         <div id="comment">
-            <h3>Leave your comment here</h3>
-            <form action="mailto:se.biruk.ayalew@gmail.com" method="POST" enctype="utf-8">
-                <table>
-                    <tr>
-                        <td><label for="fName">First Name</label><br><br></td>
-                        <td><input type="text" name="fName" id="fName" pattern="[A-Za-z]{1,15}" required
-                            title="your name should have at least one or atmost fifty letters"><br><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="lName">Last Name</label><br><br></td>
-                        <td><input type="text" name="lName" id="lName" pattern="[A-Za-z]{1,15}" required
-                            title="your name should have at least one or atmost fifty letters"><br><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email:</label><br><br></td>
-                        <td><input type="email" name="email" id="email" required><br><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="pass">Password</label><br><br></td>
-                        <td><input type="password" name="Password" id="" pattern="[A-Za-z\d.&]{8,15}" 
+            <!-- <div class="form2">
+                <h3>Leave your comment here</h3>
+            </div> -->
+            <div class="general"> 
+                <form action="mailto:se.biruk.ayalew@gmail.com" method="POST" enctype="utf-8"></form>
+                <div class="form2">
+                    <label for="fName">First Name</label>
+                    <input type="text" name="fName" id="fName" pattern="[A-Za-z]{1,15}" required
+                    title="your name should have at least one or atmost fifty letters">
+                </div>
+                <div class="form2">
+                    <label for="lName">Last Name</label>
+                    <input type="text" name="lName" id="lName" pattern="[A-Za-z]{1,15}" required
+                    title="your name should have at least one or atmost fifty letters">
+                </div>
+                <div class="form2">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form2">
+                    <label for="pass">Password</label>
+                    <input type="password" name="Password" id="" pattern="[A-Za-z\d.&]{8,15}" 
                             title="Enter letters and numbers only and the password should contain greater than 8 characterstics"
-                            placeholder="********"><br><br></td>
-                    </tr>
-                </table>
-                <table>
-                        <tr>
-                            <td>
-                                <select name="Continent">
-                                    <option value="Asia">Asia</option>
-                                    <option value="Africa" selected>Africa</option>
-                                    <option value="South America">South America</option>
-                                    <option value="North America">North America</option>
-                                    <option value="Antarctica">Antarctica</option>
-                                    <option value="Europe">Europe</option>
-                                    <option value="Australia">Australia</option>
-                                </select><br><br>
-                            </td>
-                            
-                        </tr><br>
-                        <tr>
-                            <td>
-                                <label for="detail">What do you say?</label><br><br>
-                            </td></tr>
-                        <tr>
-                            <td>
-                                <textarea name="detaildetail" id="" cols="35" rows="10" required
-                            title="Leave a message please" placeholder="write something interesting here..."></textarea><br><br>
-                            </td></tr>
-                        <tr>
-                            <td>
-                                <label for="rating">Give rating from 1 to 10 for this CV</label><br><br>
-                            </td>
-                            <td>
-                                <select name="Rating">
-                                    <option value="1" >1</option>
-                                    <option value="2" >2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10" selected>10</option>
-                                </select><br><br>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><label>Recommend a better CV by entering its URL</label><br><br></td>
-                            <td><input type="url" name="" id=""><br><br></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="submit" name="submit">
-                            </td></tr>
-                    </table>
-                </form>
-            </td>
-        </tr>
-        </table>
+                            placeholder="********">
+                </div>
+                <div class="form2">
+                    <select name="Continent">
+                        <option value="Asia">Asia</option>
+                        <option value="Africa" selected>Africa</option>
+                        <option value="South America">South America</option>
+                        <option value="North America">North America</option>
+                        <option value="Antarctica">Antarctica</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </div>
+                <div class="form2">
+                    <label for="detail">What do you say?</label>
+                </div>
+                <div class="form2">
+                    <textarea name="detaildetail" id="" cols="50" rows="10" required
+                    title="Leave a message please" placeholder="write something interesting here..."></textarea>
+                </div>
+                <div class="form2">
+                    <label for="rating">Give rating from 1 to 10 for this CV</label>
+                    <select name="Rating">
+                        <option value="1" >1</option>
+                        <option value="2" >2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10" selected>10</option>
+                    </select>
+                </div>
+                <div class="form3">
+                    <label>Recommend a better CV by entering its URL</label><br>
+                    <input type="url" name="" id="">
+                </div>
+                <div class="form2">
+                    <input type="submit" name="submit">
+                </div>
+            </form>
+            </div>
         </div>
         <div id="map">
             <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" 
