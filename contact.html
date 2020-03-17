@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Biruk CV</title>
     <link rel="stylesheet" href="./Asset/CSS/style.css">
+    <link rel="stylesheet" href="./Asset/CSS/media.css">
     <link rel="shortcut icon" href="./Asset/Images/icon.png" type="image/x-icon">
 </head>
 <body>
@@ -41,11 +42,13 @@
     <!-- Contact form -->
     <div id="formation">
         <div id="comment">
-            <div class="form2">
-                <h3>Leave your comment here</h3>
+            <div>
+                <form action="mailto:se.biruk.ayalew@gmail.com" method="POST" enctype="utf-8">
             </div>
-            <div class="general"> 
-                <form action="mailto:se.biruk.ayalew@gmail.com" method="POST" enctype="utf-8"></form>
+            <div id="general1"> 
+                <div class="form2">
+                    <h3>Leave your comment here</h3>
+                </div>
                 <div class="form2">
                     <label for="fName">First Name</label>
                     <input type="text" name="fName" id="fName" pattern="[A-Za-z]{1,15}" required
@@ -77,6 +80,8 @@
                         <option value="Australia">Australia</option>
                     </select>
                 </div>
+            </div>
+            <div id="genera2">
                 <div class="form2">
                     <label for="detail">What do you say?</label>
                 </div>
@@ -106,16 +111,20 @@
                 <div class="form2">
                     <input type="submit" name="submit">
                 </div>
-            </form>
             </div>
+                
+            </form>
         </div>
         <div id="map">
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" 
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" 
                 id="gmap_canvas" src="https://maps.google.com/maps?q=Addis%20Ababa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a 
-                href="https://www.emojilib.com"></a></div><style>.mapouter{position:relative;text-align:right;
+                href="https://www.emojilib.com"></a>
+                </div><style>.mapouter{position:relative;text-align:right;
                 height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:
-                500px;width:600px;}</style></div>
+                500px;width:600px;}</style>
+                </div>
         </div>
     </div>
     <div class="bottom">

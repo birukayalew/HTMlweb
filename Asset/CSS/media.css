@@ -1,0 +1,73 @@
+@media screen and (max-width: 900px){ 
+    #whole{
+        display: block;
+        padding: 0%;
+    }
+    .exp>label[for="job"]{
+        padding: 75px;
+        }
+}
+@media screen and (max-width: 600px){
+    .div>ul{
+        display: block;
+    }
+}
+@media screen and (max-width: 1200px){
+    #about{
+        display: block;
+    }
+    #sador>img{
+        width: 40%;
+        height: 40%;
+        padding-left: 30%;
+    }
+    #sador{
+        margin-bottom: 1%;
+    }
+}
+@media screen and (max-width: 840px){
+    #talk>p{
+        font-size: 15px;
+    }
+    #talk>h1,#talk>h2{
+        font-size: 20px;
+    }
+    .col1,.col2,.col3{
+        margin-left: 25%;
+        width: 50%;
+        float: none;
+    }
+}
+@media screen and (max-width: 1300px){
+    #formation{
+        display: block;
+    }
+    #comment{
+        margin-right: 0%;
+        margin-bottom: 1%;
+        padding: 0%;
+    }
+    .form2,.form3{
+        padding: 1%;
+    }
+    .form2>input[type="email"]{
+        margin-left:27px;
+    }
+    .form2>input[type="password"]{
+        margin-left:8px;
+    }
+    
+}
+@media screen and (max-width: 1300px) and (min-width: 800px){
+    #comment{
+        padding: 3%;
+        display: flex;
+    }
+    #general1{
+        flex: 1;
+    }
+    #general2{
+        flex: 2;
+    }
+}
+
