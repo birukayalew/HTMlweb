@@ -37,6 +37,12 @@
         width: 50%;
         float: none;
     }
+    iframe{
+        width: 350px;
+        height: 400px;
+        padding-right: 50%;
+       
+    }
 }
 @media screen and (max-width: 1300px){
     #formation{
