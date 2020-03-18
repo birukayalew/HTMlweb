@@ -21,34 +21,40 @@
         <!-- Our blog -->
         <div id="content">
             <section>
-                <p class="title">My first post</p>
+                <p class="title">Does it matter to use relative size on styling the size of an element?</p>
                 <article>
-                    <p>The first post...</p>
+                    <p>
+                        As browser features matured, the way we code our sites evolved into a whole new paradigm .
+                        We switched from defining and coding our units of measurements in <strong>Pixels</strong>
+                        and began using relative Cascading Style Sheet(CSS) units more consistently in our CSS to meet the needs of ever changing
+                        viewport sizes. On point of that, browsers have added more features to allow us to create flexible
+                        and robust designs. For instance, <strong>browser zooming.</strong>The most important reason 
+                        for using responsive and unitless values in CSS is for supporting users that relay on zooming.
+                        At this point , a debate can arise between browser zooming ability and CSS relative units.
+                        Some of the debaters say, browsers handle all the font zooming for us, so we don't have to convert
+                        our typography to relative units in css. Users don't bother to adjust the font display settings in
+                        the browser.On the other hand opponents say, yes, browsers handle page zoom for us, yet there's a 
+                        difference between how the UI appears when the page is zoomed, depending on whether the default browser
+                        size has been adjusted as well. Users do bother to adjust the font display settings in the browser so
+                        we need to account for that in our CSS declarations. But, I am against the debaters who said that 
+                        CSS relative units should not be applied to style a page. Take a look for example, vision disabilities,
+                        if we don't apply relative units in our css and if the vision disabilities want to zoom in to have a clear 
+                        vision by going to the browser setting and increasing font size, nothing will be increased unless the css is 
+                        in relative units. Even though it is possible to use browser zooming feature to zoom, you can only zoom 
+                        to specific number choices like 100%,110%,120%...etc,depending on browsers. But using relative units 
+                        you can give different zoom features depending on the parent root.
+
+                    </p>
                 </article>
-                <p class="date">March 13, 2020 : 3:00AM</p>
-            </section>
-            <!-- Second blog -->
-            <section>
-                <p class="title">My second post</p>
-                <article>
-                    <p>The second post</p>
-                </article>
-                <p class="date">March 13, 2020 : 3:00AM</p>
-            </section>
-            <section>
-                <p class="title">My third post</p>
-                <article>
-                   <p>The third post</p>
-                </article>
-                <p class="date">March 13, 2020 : 3:00AM</p>
-            </section>
+                <p class="date">March 18, 2020 : 6:00PM</p>
+            
         </div>
-        <div id="foo">
+        <div class="bottom">
             <a href="https://www.facebook.com/" target="_blank" >Facebook</a> |
             <a href="https://twitter.com/login" target="_blank" >Twitter</a>
         </div>
-           <div id="cop">
-            <p align="center">Developed by Biruk Ayalew &copy;2020</p>
+           <div class="copyright">
+            <p>Developed by Biruk Ayalew &copy;2020</p>
            </div>
 
 </body>
