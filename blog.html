@@ -47,7 +47,46 @@
                     </p>
                 </article>
                 <p class="date">March 18, 2020 : 6:00PM</p>
-            
+            </section>
+            <!-- Second blog -->
+            <section>
+                <p class="title">16px is default browser font-size so what does it mean when we say 200px?How 
+                    does the browser interpret that?
+                </p>
+                <article>
+                    <p>
+                        Setting the font size in pixel values (px) is a good choice when you need pixel accuracy which is static.
+                        Needless to say, the default browser  font-size is 16px. For the browser 16px is equal to 100% and
+                        everything is scaled compared to 16px. For example, if the font size of a paragraph
+                        is 200px, the browser will calculate it like: if 16px is 100%, 200px is what?
+                        So it will understand it as 200px is 1250 times default browser size(16px).
+                        like 32px is twice of the default value. But, the browser passes a lot of steps to understand
+                        this. Let's look at it.
+                        When you write some HTML, CSS, and JS, and attempt to open the HTML file in your browser, 
+                        the browser reads the <strong>raw bytes</strong> of HTML from your hard disk (or network).But not the 
+                        actual characters you have written.
+                        The browser receives the bytes of data, but it can’t really do anything with it; the raw bytes of 
+                        data must be converted to a form it understands. So, the raw bytes will be converted into <strong>characters</strong>
+                        and these characters are further parsed into something called <strong>tokens</strong>. Thus, the HTML file will be
+                        broken down to tokens and this is how the browser begins to understand what we have written. Then,
+                        the tokens will be converted into <strong>nodes</strong>. Upon creating these nodes, the nodes are then linked in a 
+                        tree data structure known as the <strong>Document Object Model(DOM)</strong>. But, we didn't still come to CSS and measurements.
+                        But, While the browser receives the raw bytes of data and kicks off the DOM construction process, it will also 
+                        make a request to fetch the .css stylesheet linked.As soon the browser begins to parse the HTML, upon finding a 
+                        link tag to a CSS file, it simultaneously makes a request to fetch that. Here after, the same procedure 
+                        like the HTML will be applied. Raw bytes-characters-tokens-nodes-tree formed and the bytes-characters-tokens-nodes-tree
+                        created is called <strong>CSSOM(CSS Object Model)</strong>. Now,the browser combines the DOM and CSSOM trees into something 
+                        called a render tree. With the render tree constructed, the next step is to perform the layout. Right now, 
+                        we have the content and style information of all visible content on the screen, but we haven’t actually 
+                        rendered anything to the screen. Here it comes the calculation that we have talked earlier. The browser
+                        has to calculate the exact size and position of each object on the page. Then, the browser will begin to 
+                        calculate relative to the default browser size.With the information about the exact positions of each element now computed, 
+                        all that is left is to paint the elements to the screen.
+                    </p>
+                </article>
+                <p class="date">March 18, 2020 : 06:10PM</p>
+            </section>
+           
         </div>
         <div class="bottom">
             <a href="https://www.facebook.com/" target="_blank" >Facebook</a> |
