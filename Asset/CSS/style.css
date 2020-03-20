@@ -3,46 +3,95 @@ body{
     margin: 0;
     background-color: #fbf9f4;
 }
+.container{
+    min-height: calc(100vh - 197px);
+}
 /* Index.html css */
 .div{
     border: 2px solid transparent;
-    margin: 1% 3% 0% 3%;
-    border-bottom: 1px solid black;
     position: relative  ;
+   
 }
 .div>ul{
-    justify-content: center;
+    transform: translateY(-50%,-50%);
+    margin: 0;
+    padding: 1.25rem 25% 0 25%;
     display: flex;
-    list-style-type: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
 }
 .div>ul>li{
-    padding-left: 4%;
-    padding-right: 4%;
-    color: white;
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+.div>ul>li:last-child{
+    border-right: none;
 }
 .div>ul>li>a{
+    
     text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+.div>ul>li>a>.icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.div>ul>li>a>.icon>.fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #e91e63;
+}
+.div>ul>li>a:hover>.icon>.fa{
+    transform: translateY(-100%);
+}
+.div>ul>li>a>.icon>.fa:last-child{
+    color: #000;
+}
+.div>ul>li>a>.name{
+    color: purple;
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
 }
 #whole{
-    padding: 1%;
-    border: 2px solid transparent;
+    padding: 0.5%;
+    border: 1px solid transparent;
     display: flex;
-    margin: 0% 3% 1% 3%;
-    border-bottom: 1px solid black;
+    margin: 0%;
+    box-shadow: 0 10px 30px rgba(200,100,.1);
 }
 #hobbies{
-    margin-right: 1%;
+    margin-right: 0.5%;
     border: 2px solid transparent;
-    flex: 1;
+    flex: 2;
+    order: 3;
 }
 #work{
-    margin-right: 1%;
+    margin-right: 0.5%;
     border: 2px solid transparent;
     flex: 1;
+    order: 4;
 }
 #Skills{
     border: 2px solid transparent;
-    flex: 1;
+    flex: 2;
+    order: 2;
+}
+#Qualities{
+    border: 2px solid transparent;
+    flex: 1.5;
+    order: 1;
+    
 }
 .head{
     font-family: Arial, Helvetica, sans-serif;
@@ -57,16 +106,23 @@ body{
 .exp>label[for="job"]{
     padding: 20%;
 }
-#hobbies,#work,#Skills{
+#hobbies,#work,#Skills,#Qualitites{
+    font-size: 15px;
     padding: 1%;
 }
-#hobbies>div>ul>li{
+#hobbies>div>ul>li,#Qualities>ul>li{
     list-style-type: none;
     padding: 0.5%;
 }
-#hobbies>div>ul>li>ul>li{
+#hobbies>div>ul>li:before{
+    content: "✔";
+}
+#hobbies>div>ul>li>ul>li,#Qualities>ul>li>ul>li{
     list-style-type: none;
     padding: 0.5%;
+}
+#hobbies>div>ul>li>ul>li::before,#Qualities>ul>li>ul>li:before{
+    content: "*";
 }
 .copyright{
     text-align: center;
@@ -81,35 +137,38 @@ body{
     margin: 0% 3% 0% 3%;
     border: 2px solid transparent;
     padding: 1%;
-    border-bottom: 1px solid black;
 }
-#sador{
+.sador{
     margin-right: 2%;
     flex: 1;
     border: 2px solid transparent;
     padding: 3%;
 }
-#sador>img{
-    width: 90%;
-    height: 90%;
+.sador>img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
 }
 #talk{
-    flex: 2;
+    flex: 3;
     padding: 2%;
     border: 2px solid transparent;
 }
 #talk>p{
-    padding: 0.5%;
     font-style: oblique;
     font-size: 20px;
 }
+#talk>p:nth-of-type(2){
+    line-height: 1.8;
+    text-align: justify;
+}
 #formation{
     display: flex;
-    margin: 0.5% 3% 3% 3%;
     border: 2px solid transparent;
     padding: 1%;
     border-bottom: 1px solid black;
     margin-bottom: 0%;
+    box-shadow: 0 10px 30px rgba(200,100,.1);
 }
 #comment{
     margin-right: 2%;
@@ -123,18 +182,35 @@ body{
     border: 2px solid transparent;
 }
 .form2,.form3{
-    padding: 3%;
-    display: block;
+    position: relative;
+    padding: 0.5rem;
 }
-.form2>label{
-    padding-right: 5%;
+.form2 i{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 0.5625rem 0.5rem;
+    color: #aaa;
+    transition: .3s;
 }
-.form2>input[type="email"]{
-    margin-left:7%;
+.form2>input[type="text"]:focus + i,.form2>input[type="email"]:focus + i,.form2>input[type="password"]:focus+ i{
+    color: dodgerblue;
 }
 .form2>input[type="text"],.form2>input[type="email"],.form2>input[type="password"]{
-    border-radius: 10px;
-    height: 30px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    outline: none;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    transition: 3s;
+    padding-left: 2.5rem;
+}
+textarea{
+    outline: none;
+}
+.form2>input[type="text"]:focus,.form2>input[type="email"]:focus,.form2>input[type="password"]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
 }
 .form2>select[name="Continent"]{
     width: 200px;
@@ -145,22 +221,20 @@ body{
     border-radius: 10px;
 }
 .form2>select[name="Rating"]{
-    width: 27%;
-}
-
-.form2>input[type="password"]{
-    margin-left:2%;
+    width: 5rem;
 }
 .form3>input[type="url"]{
     border-radius: 10px;
     margin-top: 5%;
-    width: 80%;
+    width: 18.75rem;
 }
 input[type="submit"]{
     margin-top: 10%;
     margin-left: 50%;
     width: 50%;
     height: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 dodgerblue
 }
 #comment>form>table{
     padding: 2%;
@@ -169,63 +243,125 @@ input[type="submit"]{
 
 
 #tag{
-    margin-left: 3%;
-    margin-right: 3%;
-    width: 94%;
+    border: 2px solid transparent;
+    margin: auto;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
     text-transform: uppercase;
+    font-style: oblique;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+    font-size: 2rem;
     font-style: italic;
-    border-bottom: 1px solid rgb(0, 0,0);
+    border-bottom: 1px solid rgb(255, 0,0);
+    color: #CD5C5C;
 }
-.images{
-    margin-left: 1%;
-    margin-right: 1%;
-}
-.col1>img,.col2>img,.col3>img{
-    width: 100%;
-    height: 300px;
-}
-.col1,.col2,.col3{
-    margin: 1.66%;
-    width: 30%;
+.images img{
     float: left;
+    width: 30%;
+    height: 30%;
+    margin: 1.66%;
 }
-.row1::after,.row2::after,.row3::after{
-    content: "";
+.clear{
     clear: left;
 }
+.Footer{
+    border: 1px solid transparent;
+    background-color: #051e3e;
+}
+.copyright p,.copyright p a{
+    color: white;
+}
 .bottom,.copyright{
-    margin: 1% 3% 1% 3%;
+    color: white;
+    margin: 0;
     padding: 1%;
     border: 1px solid transparent;
-    border-bottom: 1px solid black;
 }
 .bottom>a{
     padding: 30px;
     text-decoration: none;
+    color: white;
 }
-.title{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.copyright p a{
+    color: blue;
+    text-decoration: none;
 }
-#content{
-    margin: 3%;
-}
-
 /* myworks.html css*/
 #Questions{
-    margin: 20% 5% 10% 5%;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#Questions a{
+    box-shadow: 0 10px 30px rgba(200,100,.3);
 }
 #Questions>a{
-    padding: 10%;
-    font-size: 200%;
+    padding: 4rem;
+    font-size: 2rem;
     list-style-type: none;
     text-decoration: none;
+    margin: auto;
+}
+/* Blog page css */
+#content{
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+}
+.title,.date{
+    font-style: italic;
+    font-size: 2rem;
+}
+#section1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.articles{
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    border: 2px solid transparent;
+    display: flex;
+    padding: 1%;
+}
+.article1,.article2,.article4,.article5,.article6,.article7,.article8{
+    margin-right: 2%;
+    border: 2px solid transparent;
+    flex: 1;
+}
+.article1 p,.article2 p,.article3 p,.article4 p,.article5 p,.article6 p,.article7 p,
+.article8 p,.article9 p{
+    text-align: justify;
+}
+.article1 p::first-letter,.article2 p::first-letter,.article3 p::first-letter,
+.article4 p::first-letter,.article5 p::first-letter,.article6 p::first-letter,
+.article7 p::first-letter,.article8 p::first-letter,.article9 p::first-letter{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem;
+}
+.article3,.article9{
+    border: 2px solid transparent;
+    flex: 1;
+}
+#special{
+    font-style: italic;
+    font-size: 2rem;
+    text-align: center;
+}
+#section3 .article3{
+    margin-right: 2%;
+}
+.article3 p a,.article9 p a:nth-of-type(1){
+    margin: 35%;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(200,100,.3);
+    background-color: rgba(200,100,.3);
+}
+.article9 p a:nth-of-type(2){
+    margin: 20%;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(200,100,.3);
+    background-color: rgba(200,100,.3);
 }
 
 

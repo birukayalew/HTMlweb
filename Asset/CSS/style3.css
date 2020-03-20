@@ -4,691 +4,557 @@ body{
     margin: 0;
     background-color: #fbf9f4;
 }
-/* The main div */
-.main{
-    /* border: 1px solid red; */
-    position: absolute;
-    /* top: 50px; */
-    width: 100%;
-    
+#Ethiopia,#Armenia,#India,#Germany,#Japan,#Algeria,#Burkina,#Czech,#Honduras,#Panama,#Switzerland,#Sudan,
+#Liberia,#Kuwait,#Israel,#Congo{
+    border: 1px solid transparent;
+    width: 12.5rem;
+    height: 9.375rem;
+    flex: 1;
+    margin: 5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0.3);
 }
 /* All boxs */
-.Eth_green,.Eth_yellow,.Eth_red,.Armenia1,.Armenia2,.Armenia3,.Germany1,.Germany2,.Germany3,.sudan1,
-.sudan2,.sudan3,.kuwait,.kuwait1,.kuwait2{
-    position: absolute;
-    height: 36px;
-    width: 10%;
-    left: 15%;
-}
 /* Ethiopian Flag */
 .Eth_green{
-    padding: 0px;
+    height: 33.3%;
     background-color: green;
-    border: 2px solid green;
-    top: 20px;
 }
 .Eth_yellow{
-    padding: 0px;
-    top: 40px;
-    background-color: yellow;
-    border: 2px solid yellow;  
-    top: 60px;
+    position: relative;
+    height: 33.3%;
+    background-color: yellow; 
 }
 .Eth_red{
+    height: 33.3%;
     background-color: red;
-    border: 2px solid red; 
-    top: 100px;
 }
 .Eth_circle{
-    top: 48px;
-    left: 17.7%;
     position: absolute;
     border: 2px solid #00AFD7;
     background-color: #00AFD7;
     border-radius: 50%;
-    width: 60px;
-    height : 60px;
+    width: 4rem;
+    height: 4rem;
+    top: -0.5625rem;
+    left: 4rem;
 }
 .Eth_star{
-    top: 42px;
-    left: 18.3%;
     position: absolute;
-    font-size: 50px;
+    font-size: 3rem;
     color: #FEDD00;
+    left: 0.5rem;
+    top: -0.1875rem;
 }
 .line1{
-    top: 86px;
-    left: 20%;
     position: absolute;
-    font-size: 19px;
+    font-size: 1.2rem;
     color: #FEDD00;
+    left: 1.9rem;
+    top: 2.4rem;
 }
 .line2{
-    top: 76px;
-    left: 21.4%;
     position: absolute;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #FEDD00;
-    transform: rotate(110deg);
+    transform: rotate(130deg);
+    left: 1.1rem;
+    top: 0.7rem;
 }
 .line3{
-    top: 76px;
-    left: 18.5%;
     position: absolute;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #FEDD00;
     transform: rotate(-110deg);
+    left: 0.7rem;
+    top: 1.9rem;
 }
 .line4{
-    top: 58px;
-    left: 19.3%;
     position: absolute;
-    font-size: 20px;
-    color: #FEDD00;
-    transform: rotate(140deg);
-}
-.line5{
-    top: 58px;
-    left: 20.5%;
-    position: absolute;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #FEDD00;
     transform: rotate(-140deg);
+    margin-left: 2.5rem;
+    margin-top: 0.8rem;
+}
+.line5{
+    position: absolute;
+    font-size: 1.2rem;
+    color: #FEDD00;
+    transform: rotate(110deg);
+    left: 3rem;
+    top: 1.9rem;
 }
 /* Armenian Flag */
 .Armenia1{
-    left: 35%;
+    height: 33.3%;
     background-color: #DA291C;
-    border: 2px solid #DA291C; 
-    top: 20px;
+    
 }
 .Armenia2{
     background-color: #0033A0;
-    border: 2px solid #0033A0; 
-    top: 60px;
-    left: 35%;
+    height: 33.3%;
 }
 .Armenia3{
     background-color: #FF9E1B;
-    border: 2px solid #FF9E1B; 
-    top: 100px;
-    left: 35%;
+    height: 33.3%;
 }
 /* India Flag */
 .India1{
-    height: 36px;
-    position: absolute;
     background-color: #FF8F1C;
-    border: 2px solid #FF8F1C; 
-    top: 20px;
-    left: 55%;
-    width: 10%;
+    height: 33.3%;
 }
 .India2{
-    height: 36px;
-    /* height: 3px; */
-    width: 10%;
-    position: absolute;
-    /* width: 10%; */
+    position: relative;
     background-color: #FFFFFF;
-    border: 2px solid #FFFFFF; 
-    top: 60px;
-    left: 55%;
+    height: 33.3%;
 }
 .India3{
-    height: 36px;
-    position: absolute;
-    width: 10%;
     background-color: #509E2F;
     border: 2px solid #509E2F; 
-    top: 100px;
-    left: 55%;
+    height: 33.3%;
 }
 .circle{
-    width: 31px;
-    height: 31px;
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
     border: 3px solid #250E62 ;
     border-radius: 50%; 
-    margin: auto;
-
+    left: 4.5rem;
 }
-/* .circle>div{
-    position: relative;
-    width: 2px;
-    border: 1px solid #0000FF;
-} */
 .stripe1,.stripe2,.stripe3,.stripe4,.stripe5,.stripe6,.stripe7,.stripe8,.stripe9,.stripe10,.stripe11,.stripe12
 {
-    width: 31px;
+    top: 1.5rem;
+    width: 3rem;
     height: 0px;
     border: 0.5px solid #250E62;
     position: absolute;
     margin: auto;
 }
-.stripe1{
-    top: 18px;
-}
 .stripe2{
-    top: 18px; 
     transform: rotate(90deg);
 }
 .stripe3{
-    top: 18px;
     transform: rotate(15deg);
 }
 .stripe4{
-    top: 18px;
     transform: rotate(30deg);
 }
 .stripe5{
-    top: 18px;
     transform: rotate(45deg);
 }
 .stripe6{
-    top: 18px;
     transform: rotate(60deg);
 }
 .stripe7{
-    top: 18px;
     transform: rotate(75deg);
 }
 .stripe8{
-    top: 18px;
     transform: rotate(-15deg);
 }.stripe9{
-    top: 18px;
     transform: rotate(-30deg);
 }
 .stripe10{
-    top: 18px;
     transform: rotate(-45deg);
 }
 .stripe11{
-    top: 18px;
     transform: rotate(-60deg);
 }
 .stripe12{
-    top: 18px;
     transform: rotate(-75deg);
 }
 /* Germany flag */
 .Germany1{
-    left: 75%;
+    height: 33.3%;
     background-color: #000000;
-    border: 2px solid #000000;
-    top: 20px;
 }
 .Germany2{
-    left: 75%;
     background-color: #DA291C;
-    border: 2px solid #DA291C;
-    top: 60px;
+   height: 33.3%;
 }
 .Germany3{
-    left: 75%;
+    height: 33.3%;
     background-color: #FFCD00;
-    border: 2px solid #FFCD00;
-    top: 100px;
     
 }
 /* Japan flag */
-.Japan{
-    top: 250px;
-    position: absolute;
-    height: 108px;
-    width: 10%;
-    left: 15%;
-    border: 2px solid #FFFFFF;
+#Japan{
+    position: relative;
     background-color: #FFFFFF;
 }
-.Japan::before{
-    content: "";
-    width: 40%;
-    height: 60%;
+.japan{
     position: absolute;
-    background-color: #FF0000;
-    top: 20%;
-    left: 30%;
+    border: 2px solid red;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-
+    background-color: red;
+    top: 2.1875rem;
+    left: 3.7rem;
 }
 /* Algeria flag */
+#Algeria{
+    position: relative;
+}
 .Algeria1,.Algeria2{
     position: absolute;
-    height: 108px;
-    width: 5%;
-    
-    top: 250px;
 }
 .Algeria1{
-    border: 2px solid #007A33;
     background-color: #007A33;
-    left: 35%;
-}
-.Algeria2{
-    border: 2px solid #FFFFFF;
-    left: 40%;
-    background-color: #FFFFFF;
+    width: 50%;
+    height: 100%;
 }
 .moon{
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 4rem;
+    height:4rem;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 10px 10px 0 0 #C8102E;
-    transform: rotate(130deg);
-    top: 280px;
-    left: 39.5%;
-    z-index: 2;
+    box-shadow: 0.625rem 0.625rem 0 0 #C8102E;
+    transform: rotate(135deg);
+    left: 5.5rem;
+    top: 2.7rem;
 }
 .star{
-    top: 270px;
-    left: 39.8%;
     position: absolute;
-    font-size: 50px;
+    font-size: 4rem;
     color: #C8102E;
     transform: rotate(25deg);
+    left: 6rem;
+    top: 1.8rem;
 }
 /* Burkina Faso flag*/
 .burkina1{
-    position: absolute;
-    width: 10%;
-    height: 54px;
-    border: 2px solid #EF3340;
     background-color: #EF3340;
-    top: 250px;
-    left: 55%;
+    height: 50%;
+    width: 100%;
 }
 .burkina2{
-    position: absolute;width: 10%;height: 54px;top: 308px;left: 55%;
+    position: relative;
     background-color: #009639;
-    border: 2px solid #009639;
+    width: 100%;
+    height: 50%;
 }
 .burkinastar{
+    top: -50px;
     color: #FDDA24;
-    left: 58.5%;
-    top: 270px;
     position: absolute;
-    font-size: 50px;
+    font-size: 4rem;
+    left: 4rem;
 }
 /* Czech Republic Flag */
-.Czech1,.Czech2{
-    position: absolute;
-    width: 10%;
-    height: 54px;
-    left: 75%;
+#Czech{
+    position: relative;
 }
 .Czech1{
-    border: 2px solid #FFFFFF;
-    background-color: #FFFFFF;
-    top: 250px;
+    background-color: #ffffff;
+    height: 50%;
+    width: 100%;
 }
 .Czech2{
-    border: 2px solid #d7141a;
     background-color: #d7141a;
-    top: 308px;
+    height: 50%;
+    width: 100%;
 }
 .Czech3{
-    top: 250px;
-    left: 75%;
+    top: 0;
+    left: 0;
     position: absolute;
     width: 0;
     height: 0;
-    border-top: 58px solid transparent;
-    border-left: 70px solid #11457e;
-    border-bottom: 58px solid transparent;
+    border-top: 4.7rem solid transparent;
+    border-left: 5.8rem solid #11457e;
+    border-bottom: 4.7rem solid transparent;
 }
 /* Honduras Flag */
 .honduras1{
-    position: absolute;
-    top: 480px;
-    left: 15%;
-    width: 10%;
-    height: 36px;
-    border: 2px solid #0072CE;
+    width: 100%;
+    height: 33.3%;
     background-color: #0072CE;
 }
 .hond2{
-    position: absolute;
-    top: 520px;
-    left: 15%;
-    width: 10%;
-    height: 36px;
-    border: 2px solid #FFFFFF;
-    background-color: #FFFFFF;
+    position: relative;
+    width: 100%;
+    height: 33.3%;
+    background-color: #ffffff;
 }
 .hond3{
-    position: absolute;
-    top: 560px;
-    left: 15%;
-    width: 10%;
-    height: 36px;
-    border: 2px solid #0072CE;
+    width: 100%;
+    height: 33.3%;
     background-color: #0072CE;
 }
 .hond4{
-    top: 515px;
-    left: 17%;
-    font-size: 20px;
+    position: absolute;
+    left: 3rem;
+    font-size: 1.25rem;
     position: absolute;
     color: #0072CE;
 }
 .hond5{
-    top: 530px;
-    left: 17%;
-    font-size: 20px;
+    position: absolute;
+    left: 8rem;
+    font-size: 1.25rem;
     position: absolute;
     color: #0072CE;
 }
 .hond6{
-    top: 525px;
-    left: 19.5%;
-    font-size: 20px;
+    top: 1.5rem;
+    position: absolute;
+    left: 3rem;
+    font-size: 1.25rem;
     position: absolute;
     color: #0072CE;
 }
 .hond7{
-    top: 515px;
-    left: 22%;
-    font-size: 20px;
+    position: absolute;
+    left: 8rem;
+    top: 1.5rem;
+    font-size: 1.25rem;
     position: absolute;
     color: #0072CE;
 }
 .hond8{
-    top: 530px;
-    left: 22%;
-    font-size: 20px;
+    position: absolute;
+    top: 0.7rem;
+    left: 5.5rem;
+    font-size: 1.25rem;
     position: absolute;
     color: #0072CE;
 }
 /* Panama flag */
-.panama,.panama1,.panama2,.panama3,.panama4,.panama5{
+#Panama{
+    position: relative;
+}
+.panama,.panama1,.panama2,.panama3{
     position: absolute;
-    height: 54px;
-    width: 5%;
+    width: 50%;
+    height: 50%;
 }
 .panama{
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    top: 480px;
-    left: 35%;
+    background-color: #ffffff;
+    top: 28rem;
+    left: 20rem;
 }
 .panama1{
+    right: 0;
     background-color: #C8102E;
-    border: 2px solid #C8102E;
-    top: 480px;
-    left: 40%;
 }
 .panama2{
+    bottom: 0;
     background-color: #005EB8;
-    border: 2px solid #005EB8;
-    top: 538px;
-    left: 35%;
-    width: 5%;
 }
 .panama3{
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    top: 538px;
-    left: 40%;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
 }
 .panama4{
     position: absolute;
     color: #005EB8;
-    top: 478px;
-    left: 36%;
-    font-size: 40px;
+    font-size: 4rem;
+    top: -0.5rem;
+    left: 1rem;
 }
 .panama5{
     position: absolute;
     color: #005EB8;
-    top: 537px;
-    left: 41.4%;
-    font-size: 40px;
+    font-size: 4rem;
+    bottom: 0;
+    right: 1.5rem;
 }
 /* switzerland flag */
+#Switzerland{
+    position: relative;
+    background-color: #DA291C;
+}
 .switzerland{
     position: absolute;
-    border: 2px solid #DA291C;
-    background-color: #DA291C;
-    width: 10%;
-    height: 108px;
-    top: 480px;
-    left: 55%;
+    border: 1px solid white;
+    top: 20%;
+    bottom: 20%;
+    width: 1rem;
+    height: 60%;
+    background-color: white;
+    left: 45%;
 }
-.switzerland::after{
-    content: " ";
+.switzerland1{
     position: absolute;
-    display: block;
-    background-color: #FFFFFF;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    top: 50%;
-    left: 5px;
-    right: 5px;
-}
-.switzerland::before{
-    content: " ";
-    position: absolute;
-    display: block;
-    background-color: #fff;
-    width: 20px;
-    margin-left: -10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    left: 50%;
-    top: 5px;
-    bottom: 5px;
+    border: 1px solid white;
+    left: 20%;
+    top: 40%;
+    bottom: 20%;
+    height: 1rem;
+    width: 60%;
+    background-color: white;
 }
 /* Sudan flag */
+#Sudan{
+    position: relative;
+}
 .sudan1{
-    top: 480px;
-    left: 75%;
-    border: 2px solid #EF3340;
     background-color: #EF3340;
+    width: 100%;
+    height: 33.3%;
 }
 .sudan2{
-    top: 520px;
-    left: 75%;
-    border: 2px solid #FFFFFF;
+    width: 100%;
+    height: 33.3%;
     background-color: #FFFFFF;
 }
 .sudan3{
-    top: 560px;
-    left: 75%;
-    border: 2px solid #000000;
+    width: 100%;
+    height: 33.3%;
     background-color: #000000;
 }
 .sudan{
     position: absolute;
-    top: 480px;
-    left: 75%;
+    top: 0;
+    left: 0;
     width: 0;
     height: 0;
-    border-top: 60px solid transparent;
-    border-left: 60px solid #009639;
-    border-bottom: 60px solid transparent;
+    border-top: 4.7rem solid transparent;
+    border-left: 5rem solid #009639;
+    border-bottom: 4.7rem solid transparent;
 }
 /* Liberia flag */
-.liberia{
-    left: 15%;
-    top: 710px;
-    position: absolute;
-    width: 10%;
-    height: 108px;
-    border: 2px solid #FFFFFF;
-    background-color: #FFFFFF;
+#Liberia{
+    position: relative;
 }
-.liberia1,.liberia2,.liberia3,.liberia4,.liberia5,.liberia6{
-    left: 15%;
+.liberia{
     position: absolute;
-    width: 10%;
-    height: 6px;
+    height: 8.1%;
+    width: 100%;
+    background-color: #EF3340;
 }
 .liberia1{
-    top: 710px;
-    border: 2px solid #EF3340;
+    position: absolute;
+    top: 19%;
+    height: 8.1%;
+    width: 100%;
     background-color: #EF3340;
 }
 .liberia2{
-    top: 732px;
-    border: 2px solid #EF3340;
+    position: absolute;
+    top: 38%;
+    height: 8.1%;
+    width: 100%;
     background-color: #EF3340;
 }
 .liberia3{
-    top: 754px;
-    border: 2px solid #EF3340;
+    position: absolute;
+    top: 55%;
+    height: 8.1%;
+    width: 100%;
     background-color: #EF3340;
 }
 .liberia4{
-    top: 776px;
-    border: 2px solid #EF3340;
+    position: absolute;
+    top: 74%;
+    height: 8.1%;
+    width: 100%;
     background-color: #EF3340;
 }
 .liberia5{
-    top: 798px;
-    border: 2px solid #EF3340;
+    position: absolute;
+    top: 92%;
+    height: 8.1%;
+    width: 100%;
     background-color: #EF3340;
 }
 .liberia6{
-    top: 818px;
-    border: 2px solid #EF3340;
-    background-color: #EF3340;
+    position: absolute;
+    left: 0;
+    width: 3.75rem;
+    height: 4.2rem;
+    border: 1px solid #00205B;
+    background-color: #00205B;
 }
 .liberia7{
     position: absolute;
-    top: 710px;
-    left: 15%;
-    width: 4%;
-    height: 50px;
-    border: 2px solid #00205B;
-    background-color: #00205B;
-}
-.liberia8{
-    position: absolute;
-    top: 700px;
-    left: 15.5%;
-    font-size: 50px;
+    top: -13px;
+    left: 0;
+    font-size: 4rem;
     color: #FFFFFF;
 }
 /* Kuwait flag */
+#Kuwait{
+    position: relative;
+}
 .kuwait{
-    top: 710px;
-    left: 35%;
-    border: 2px solid #00965E;
+    width: 100%;
+    height: 33.3%;
     background-color: #00965E;
 }
 .kuwait1{
-    top: 750px;
-    left: 35%;
-    border: 2px solid #FFFFFF;
-    background-color: #FFFFFF;
+    width: 100%;
+    height: 33.3%;
+    background-color: #ffffff;
 }
 .kuwait2{
-    top: 790px;
-    left: 35%;
-    border: 2px solid #C8102E;
+    width: 100%;
+    height: 33.3%;
     background-color: #C8102E;
 }
 .kuwait3{
     position: absolute;
-    left: 35%;
-    top: 710px;
-    border-left: 50px solid #000000;
-    border-bottom: 41px solid transparent;
-    border-top: 41px solid transparent;
-    height: 38px;
+    top: 0;
+    left: 0;
+    border-left: 3.125rem solid #000000;
+    border-bottom: 3.3rem solid transparent;
+    border-top: 3rem solid transparent;
+    height: 33.3%;
     width: 0;
 }
 /* Israel flag */
 .Israel1{
-    top: 710px;
-    left: 55%;
-    position: absolute;
-    height: 108px;
-    width: 10%;
-    border: 2px solid #FFFFFF;
-    background-color: #FFFFFF;
-}
-.Israel2{
-    position: absolute;
-    top: 720px;
-    left: 55%;
-    width: 10%;
-    height: 16px;
-    border: 2px solid #005EB8;
+    width: 100%;
+    height: 25%;
     background-color: #005EB8;
 }
+.Israel2{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: #ffffff;
+}
 .Israel3{
-    position: absolute;
-    top: 790px;
-    left: 55%;
-    width: 10%;
-    height: 16px;
-    border: 2px solid #005EB8;
+    width: 100%;
+    height: 25%;
     background-color: #005EB8;
 }
 .Israel4{
     position: absolute;
     color: #005EB8;
-    top: 720px;
-    left: 58.5%;
-    font-size: 60px;
+    font-size: 5rem;
+    top: -1.3rem;
+    left: 4rem;
 }
 /* Congo Flag */
+#Congo{
+    position: relative;
+    background-color: #FFD100;
+}
 .congo1{
     position: absolute;
-    top: 710px;
-    left: 75%;
-    height: 108px;
-    width: 10%;
-    border: 2px solid #FFD100;
-    background-color: #FFD100;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 8rem solid #009639;
+    border-bottom: 9.5rem solid transparent;
 }
 .congo2{
     position: absolute;
-    top: 710px;
-    left: 75%;
+    bottom: 0;
+    right: 0;
     width: 0;
     height: 0;
-    border-left: 90px solid #009639;
-    border-bottom: 113px solid transparent;
+    border-left: 8rem solid transparent;
+    border-bottom: 9.5rem solid #EF3340;
 }
-.congo3{
-    position: absolute;
-    top: 710px;
-    left: 78.7%;
-    width: 0;
-    height: 0;
-    border-left: 90px solid transparent;
-    border-bottom: 113px solid #EF3340;
-}
-#bottom{
-    margin-left: 3%;
-    /* margin: 1% 3% 1% 3%; */
-    padding: 1%;
-    border: 1px solid transparent;
-    border-bottom: 1px solid black;
-    width: 100%;
-    position: absolute;
-    top: 900px;
-}
-#bottom>a{
-    padding: 30px;
-    text-decoration: none;
-}
-#copyright{
-    text-align: center;
-    margin: 1% 3% 1% 3%;
-    padding: 2%;
-    border: 1px solid transparent;
-    border-bottom: 1px solid black;
-    width: 100%;
-    position: absolute;
-    top: 950px;
+#AllFlags{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
 }
 
 

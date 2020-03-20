@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px){ 
+@media screen and (max-width: 56.25rem){ 
     #whole{
         display: block;
         padding: 0%;
@@ -7,25 +7,38 @@
         padding: 75px;
         }
 }
-@media screen and (max-width: 600px){
-    .div>ul{
-        display: block;
-    }
+@media screen and (max-width: 37.5rem){
+    
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 75rem){
     #about{
         display: block;
     }
-    #sador>img{
+    .sador>img{
         width: 40%;
         height: 40%;
-        padding-left: 30%;
     }
-    #sador{
-        margin-bottom: 1%;
+    .sador{
+        text-align: center;
+    }
+    .div>ul{
+        display: block;
+    }
+    .div>ul>li{
+        border-right: none;
+    }
+    #whole{
+        background-image: none;
+    }
+    #work{
+        flex: 1.5;
+    }
+    .articles{
+        display: flex;
+        flex-direction: column;
     }
 }
-@media screen and (max-width: 840px){
+@media screen and (max-width: 52.4rem){
     #talk>p{
         font-size: 15px;
     }
@@ -44,7 +57,7 @@
        
     }
 }
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 81.25rem){
     #formation{
         display: block;
     }
@@ -56,15 +69,9 @@
     .form2,.form3{
         padding: 1%;
     }
-    .form2>input[type="email"]{
-        margin-left:27px;
-    }
-    .form2>input[type="password"]{
-        margin-left:8px;
-    }
     
 }
-@media screen and (max-width: 1300px) and (min-width: 800px){
+@media screen and (max-width: 81.25rem) and (min-width: 50rem){
     #comment{
         padding: 3%;
         display: flex;

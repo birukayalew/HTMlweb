@@ -7,144 +7,274 @@
     <link rel="stylesheet" href="./Asset/CSS/style.css">
     <link rel="stylesheet" href="./Asset/CSS/media.css">
     <link rel="shortcut icon" href="./Asset/Images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="div">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="myworks.html">MyWorks</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li>
+                <a href="index.html">
+                    <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="Home">Home</div>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <div class="icon">
+                        <i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
+                        <i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="Contact">Contact</div>
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <div class="icon">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="Gallery">Gallery</div>
+                </a>
+            </li>
+            <li>
+                <a href="myworks.html">
+                    <div class="icon">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="MyWorks">MyWorks</div>
+                </a>
+            </li>
+            <li>
+                <a href="blog.html">
+                    <div class="icon">
+                        <i class="fa fa-rss-square" aria-hidden="true"></i>
+                        <i class="fa fa-rss-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="Blog">Blog</div>
+                </a>
+            </li>
+           
         </ul>
     </div>
         <!-- Our blog -->
-        <div id="content">
-            <section>
-                <p class="title">Does it matter to use relative size on styling the size of an element?</p>
-                <article>
-                    <p>
-                        As browser features matured, the way we code our sites evolved into a whole new paradigm .
-                        We switched from defining and coding our units of measurements in <strong>Pixels</strong>
-                        and began using relative Cascading Style Sheet(CSS) units more consistently in our CSS to meet the needs of ever changing
-                        viewport sizes. On point of that, browsers have added more features to allow us to create flexible
-                        and robust designs. For instance, <strong>browser zooming.</strong>The most important reason 
-                        for using responsive and unitless values in CSS is for supporting users that relay on zooming.
-                        At this point , a debate can arise between browser zooming ability and CSS relative units.
-                        Some of the debaters say, browsers handle all the font zooming for us, so we don't have to convert
-                        our typography to relative units in css. Users don't bother to adjust the font display settings in
-                        the browser.On the other hand opponents say, yes, browsers handle page zoom for us, yet there's a 
-                        difference between how the UI appears when the page is zoomed, depending on whether the default browser
-                        size has been adjusted as well. Users do bother to adjust the font display settings in the browser so
-                        we need to account for that in our CSS declarations. But, I am against the debaters who said that 
-                        CSS relative units should not be applied to style a page. Take a look for example, vision disabilities,
-                        if we don't apply relative units in our css and if the vision disabilities want to zoom in to have a clear 
-                        vision by going to the browser setting and increasing font size, nothing will be increased unless the css is 
-                        in relative units. Even though it is possible to use browser zooming feature to zoom, you can only zoom 
-                        to specific number choices like 100%,110%,120%...etc,depending on browsers. But using relative units 
-                        you can give different zoom features depending on the parent root.
+        <div class="container">
 
-                    </p>
-                </article>
+        
+        <div id="content">
+            <section id="section1">
+                <p class="title">Does it matter to use relative size on styling the size of an element?</p>
+                <div class="articles">
+                    <article class="article1">
+                        <p>
+                            As browser features matured, the way we code our sites 
+                            evolved into a whole new paradigm .We switched from defining and coding
+                             our units of measurements in <strong>Pixels</strong>
+                            and began using relative Cascading Style Sheet(CSS) units more consistently
+                            in our CSS to meet the needs of ever changing viewport sizes.
+                            On point of that, browsers have added more features to allow us to create flexible
+                            and robust designs. For instance, <strong>browser zooming.</strong>The most important reason 
+                            for using responsive and unitless values in CSS is for supporting users that relay on zooming.
+                            At this point , a debate can arise between browser zooming ability and CSS relative units.
+                            
+                            
+                        </p>
+                    </article>
+                    <article class="article2">
+                        <p>
+                            Some of the debaters say, browsers handle all the font zooming for us, so we don't have to convert
+                            our typography to relative units in css. Users don't bother to adjust the font display
+                            settings in the browser.On the other hand opponents say, yes, browsers handle page zoom
+                            for us, yet there's a difference between how the UI appears when the page is zoomed,
+                            depending on whether the default browser size has been adjusted as well.
+                            Users do bother to adjust the font display settings in the browser so
+                            we need to account for that in our CSS declarations. But, I am against the debaters who said that 
+                            CSS relative units should not be applied to style a page.
+                        </p>
+                    </article>
+                    <article class="article3">
+                    <p>   
+                            Take a look for example, vision disabilities,
+                            if we don't apply relative units in our css and if the vision disabilities want to zoom in to have a clear 
+                            vision by going to the browser setting and increasing font size, nothing will be increased unless the css is 
+                            in relative units. Even though it is possible to use browser zooming feature to zoom, you can only zoom 
+                            to specific number choices like 100%,110%,120%...etc,depending on browsers. But using relative units 
+                            you can give different zoom features depending on the parent root.<br>
+                            <a href="https://www.24a11y.com/2019/pixels-vs-relative-units-in-css-why-its-still-a-big-deal/" target="blanck">SEE MORE</a>
+                        </p>
+
+                    </article>
+                </div>
+                
                 <p class="date">March 18, 2020 : 6:00PM</p>
             </section>
             <!-- Second blog -->
-            <section>
+            <section id="section2">
                 <p class="title">16px is default browser font-size so what does it mean when we say 200px?How 
                     does the browser interpret that?
                 </p>
-                <article>
-                    <p>
+                <div class="articles">
+                    <article class="article1">
+                        <p>
                         Setting the font size in pixel values (px) is a good choice when you need pixel accuracy which is static.
                         Needless to say, the default browser  font-size is 16px. For the browser 16px is equal to 100% and
                         everything is scaled compared to 16px. For example, if the font size of a paragraph
                         is 200px, the browser will calculate it like: if 16px is 100%, 200px is what?
-                        So it will understand it as 200px is 1250 times default browser size(16px).
+                        So it will understand as 200px is 1250 times default browser size(16px).
                         like 32px is twice of the default value. But, the browser passes a lot of steps to understand
                         this. Let's look at it.
                         When you write some HTML, CSS, and JS, and attempt to open the HTML file in your browser, 
-                        the browser reads the <strong>raw bytes</strong> of HTML from your hard disk (or network).But not the 
-                        actual characters you have written.
-                        The browser receives the bytes of data, but it can’t really do anything with it; the raw bytes of 
-                        data must be converted to a form it understands. So, the raw bytes will be converted into <strong>characters</strong>
-                        and these characters are further parsed into something called <strong>tokens</strong>. Thus, the HTML file will be
-                        broken down to tokens and this is how the browser begins to understand what we have written. Then,
-                        the tokens will be converted into <strong>nodes</strong>. Upon creating these nodes, the nodes are then linked in a 
-                        tree data structure known as the <strong>Document Object Model(DOM)</strong>. But, we didn't still come to CSS and measurements.
-                        But, While the browser receives the raw bytes of data and kicks off the DOM construction process, it will also 
-                        make a request to fetch the .css stylesheet linked.As soon the browser begins to parse the HTML, upon finding a 
-                        link tag to a CSS file, it simultaneously makes a request to fetch that. Here after, the same procedure 
-                        like the HTML will be applied. Raw bytes-characters-tokens-nodes-tree formed and the bytes-characters-tokens-nodes-tree
-                        created is called <strong>CSSOM(CSS Object Model)</strong>. Now,the browser combines the DOM and CSSOM trees into something 
-                        called a render tree. With the render tree constructed, the next step is to perform the layout. Right now, 
-                        we have the content and style information of all visible content on the screen, but we haven’t actually 
-                        rendered anything to the screen. Here it comes the calculation that we have talked earlier. The browser
-                        has to calculate the exact size and position of each object on the page. Then, the browser will begin to 
-                        calculate relative to the default browser size.With the information about the exact positions of each element now computed, 
-                        all that is left is to paint the elements to the screen.
-                    </p>
-                </article>
+                        the browser reads the <strong>raw bytes</strong> of HTML from your hard disk (or network).
+                        </p>
+                    </article>
+                    <article class="article2">
+                        <p>
+                            But not the actual characters you have written.
+                            The browser receives the bytes of data, but it can’t really do anything with it; the raw bytes of 
+                            data must be converted to a form it understands. So, the raw bytes will be converted into <strong>characters</strong>
+                            and these characters are further parsed into something called <strong>tokens</strong>. Thus, the HTML file will be
+                            broken down to tokens and this is how the browser begins to understand what we have written. Then,
+                            the tokens will be converted into <strong>nodes</strong>. Upon creating these nodes, the nodes are then linked in a 
+                            tree data structure known as the <strong>Document Object Model(DOM)</strong>.
+                            But, we didn't still come to CSS and measurements.
+                            But, While the browser receives the raw bytes of data and kicks off the DOM construction process, it will also 
+                            make a request to fetch the .css stylesheet linked.
+                        </p>
+                    </article>
+                    <article class="article3">
+                             <p>
+                                As soon the browser begins to parse the HTML, upon finding a 
+                                link tag to a CSS file, it simultaneously makes a request to fetch that. Here after, the same procedure 
+                                like the HTML will be applied. Raw bytes-characters-tokens-nodes-tree formed and the bytes-characters-tokens-nodes-tree
+                                created is called <strong>CSSOM(CSS Object Model)</strong>. Now,the browser combines the DOM and CSSOM trees into something 
+                                called a render tree. With the render tree constructed, the next step is to perform the layout. Right now, 
+                                we have the content and style information of all visible content on the screen, but we haven’t actually 
+                                rendered anything to the screen. Here it comes the calculation that we have talked earlier. The browser
+                                has to calculate the exact size and position of each object on the page. Then, the browser will begin to 
+                                calculate relative to the default browser size.With the information about the exact positions of each element now computed, 
+                                all that is left is to paint the elements to the screen.<br>
+                                <a href="https://blog.logrocket.com/how-browser-rendering-works-behind-the-scenes-6782b0e8fb10/">SEE MORE</a>
+                             </p>
+                    </article>
+                </div>
                 <p class="date">March 18, 2020 : 06:10PM</p>
             </section>
-            <section>
+            <section id="section3">
                 <p class="title">What are the specific changes in CSS3?</p>
-                <article>
-                   <p>
-                    CSS3 version introduced new features that allowed developers to style HTML elements with less CSS code. 
-                    The latest version of Cascade Style Sheets, CSS 3, was developed to make Web design easier but it became a hot topic for a 
-                    while because not all browsers supported it. However, trends change quickly in technology and all browser makers currently are
-                    implementing complete CSS 3 support. The CSS 3's modularized specification was the solution.
-                    Which allows them to provide support for modules incrementally without having to perform major refactoring of the browsers' codebases.
-                    The modularization concept not only makes the process of approving individual CSS 3 modules easier and faster, but it also makes documenting the spec easier.
-                    CSS3 allows developers to style HTML elements easier. They are less dependent on image files and can complete CSS styling with fewer lines of code.<br>
-                    New Features<br>
-                    1.Box Shadow<br>
-                    One of the CSS3 new features is the box-shadow property that adds a shadow to an element.
-                    Instead of using multiple images around an item, this property lets you add shadow with a short line
-                    of code. <br>
-                    2.Opacity<br>
-                    It makes elements completely transparent. For example you can apply opacity to images or other HTML elements.
-                    The transparency level depends on the indicated values.<br>
-                    3.Round Corners<br>
-                    Before the release of CSS3, developers had to write long code to produce rounded corners. 
-                    Now, it is enough to apply to the border-radius CSS3 property to HTML elements.<br>
-                    4.Attribute Selectors<br>
-                    CSS3 also introduced new selectors in addition to the ones in CSS2. Instead of applying IDs or classes for styling, developers can select HTML 
-                    elements according to their attributes.As a result, you do not have to create unique IDs only to apply CSS rules.<br>
-                    5. New Colors <br>
-                    Different type of colors are added in CSS3. For instance, RGBA and  Gradient colors take
-                    the lion share.<br>
+                <div class="articles">
+                    <article class="article1">
+                        <p>
+                        CSS3 version introduced new features that allowed developers to style HTML elements with less CSS code. 
+                        The latest version of Cascade Style Sheets, CSS 3, was developed to make Web design easier but it became a hot topic for a 
+                        while because not all browsers supported it. However, trends change quickly in technology and all browser makers currently are
+                        implementing complete CSS 3 support.
+                        </p>
+                    </article>
+                    <article class="article2">
+                        <p>
+                            The CSS 3's modularized specification was the solution, which allows them to provide support for modules
+                            incrementally without having to perform major refactoring of the browsers' codebases.
+                            The modularization concept not only makes the process of approving individual CSS3 modules easier 
+                            and faster, but it also makes documenting the spec easier.CSS3 allows developers to style HTML elements easier.
+                            They are less dependent on image files and can complete CSS styling with fewer lines of code.
+                        </p>
+                    </article>
+            </div>
+            <p id="special">New Features</p>
+            <div class="articles">
+                
+                <article class="article1">
+                    <p>
+                        1.Box Shadow<br>
+                        One of the CSS3 new features is the box-shadow property that adds a shadow to an element.
+                        Instead of using multiple images around an item, this property lets you add shadow with a short line
+                        of code.
+                    </p>
+                </article>
+                <article class="article2">
+                    <p>
+                        2.Opacity<br>
+                        It makes elements completely transparent. For example you can apply opacity to images or other HTML 
+                        elements.The transparency level depends on the indicated values.
+                    </p>
+                </article>
+                <article class="article3">
+                    <p>
+                        3.Round Corners<br>
+                        Before the release of CSS3, developers had to write long code to produce rounded corners. 
+                        Now, it is enough to apply to the border-radius CSS3 property to HTML elements.
+                    </p>
+                </article>
+                <article class="article4">
+                    <p>
+                        4.Attribute Selectors<br>
+                        CSS3 also introduced new selectors in addition to the ones in CSS2. Instead of applying 
+                        IDs or classes for styling, developers can select HTML elements according to their attributes.
+                        As a result, you do not have to create unique IDs only to apply CSS rules.
+                    </p>
+                </article>
+                <article class="article5">
+                    <p>
+                        5. New Colors <br>
+                        Different type of colors are added in CSS3. For instance, RGBA and  Gradient colors take
+                        the lion share.
+                    </p>
+                </article>
+            </div>
+            <div class="articles">
+                <article class="article6">
+                    <p>
                     6.Responsive Designs or Mobile-first mentality<br>
                     CSS3 supports responsive designs and manages media queries used for determining user's device and screen.
                     CSS3 inherently supports responsive design, and is equipped to handle media queries. Media queries are calls made by the code to determine 
                     what device and size screen a user is viewing the site on. 
-                    size.<br>
-                    7. Text shadow<br>
-                    The new text-shadow property allows you to add drop shadows to the text on a webpage. Prior to CSS 3, 
-                    this would be done by either using an image or duplicating a text element and then positioning it.<br>
-                    8. More Than Web Safe<br>
-                    Before CSS3, designers could only use “web safe” fonts to be 100 percent sure that the fonts would always display the same on everyone’s machine. 
-                    Web safe fonts are fonts that every single computer has installed and recognizes. If a designer used common fonts like Times New Roman or Arial, 
-                    they could pretty much guarantee that any user would view their site as it was intended. However, if they wanted to use a rarer font, if it wasn’t 
-                    supported by a user’s machine, it would default back to a web safe font.
+                    size.
+                    </p>
+                </article>
+                <article class="article7">
+                    <p>
+                        7. Text shadow<br>
+                        The new text-shadow property allows you to add drop shadows to the text on a webpage. Prior to CSS3, 
+                        this would be done by either using an image or duplicating a text element and then positioning it.   
+                    </p>
+                </article>
+                <article class="article8">
+                    <p>
+                        8. More Than Web Safe<br>
+                        Before CSS3, designers could only use “web safe” fonts to be 100 percent sure that the fonts would always display the same on everyone’s machine. 
+                        Web safe fonts are fonts that every single computer has installed and recognizes. If a designer used common fonts like Times New Roman or Arial, 
+                        they could pretty much guarantee that any user would view their site as it was intended. However, if they wanted to use a rarer font, if it wasn’t 
+                        supported by a user’s machine, it would default back to a web safe font.  
+                    </p>
+                </article>
+                <article class="article9">
+                    <p>
                     9. Create 2D and 3D transformations, animations, and transitions<br>
                     These effects allow elements on a page to rotate, grow, shrink, flip, or translate into a different color. For the first time, elements created in 
                     CSS can move on screen without requiring any JavaScript or Flash code. With transitions, an element can seamlessly change size and color. You can 
-                    set a duration for a transition, e.g. creating a button that slowly expands and changes color when you mouse over it.
-
-
-                   </p>
+                    set a duration for a transition, e.g. creating a button that slowly expands and changes color when you mouse over it.<br>
+                    <a href="https://www.bitdegree.org/learn/css3-features" target="blanck">SEE MORE</a><br><br>
+                    <a href="http://webreference.com/authoring/css3/index-2.html" target="blanck">New Features</a>
+                    </p>
                 </article>
+            </div>
+            
                 <p class="date">March 18, 2020 : 06:22PM</p>
             </section>
         </div>
-        <div class="bottom">
-            <a href="https://www.facebook.com/" target="_blank" >Facebook</a> |
-            <a href="https://twitter.com/login" target="_blank" >Twitter</a>
+    </div>
+        <div class="Footer">
+            <div class="bottom">
+                <a href="https://www.facebook.com/" target="_blank" >Facebook</a> |
+                <a href="https://twitter.com/login" target="_blank" >Twitter</a>
+            </div>
+            <div class="copyright">
+                <p>Developed by <a href="index.html" target="_blank" >Biruk Ayalew</a> &copy;2020</p>
+            </div>
         </div>
-           <div class="copyright">
-            <p>Developed by Biruk Ayalew &copy;2020</p>
-           </div>
 
 </body>
 </html>

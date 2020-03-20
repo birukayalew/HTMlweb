@@ -8,35 +8,92 @@
     <link rel="stylesheet" href="./Asset/CSS/style.css">
     <link rel="stylesheet" href="./Asset/CSS/media.css">
     <link rel="shortcut icon" href="./Asset/Images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="div">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="myworks.html">MyWorks</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li>
+                <a href="index.html">
+                    <div class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="Home">Home</div>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <div class="icon">
+                        <i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
+                        <i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="Contact">Contact</div>
+                </a>
+            </li>
+            <li>
+                <a href="gallery.html">
+                    <div class="icon">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="Gallery">Gallery</div>
+                </a>
+            </li>
+            <li>
+                <a href="myworks.html">
+                    <div class="icon">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="MyWorks">MyWorks</div>
+                </a>
+            </li>
+            <li>
+                <a href="blog.html">
+                    <div class="icon">
+                        <i class="fa fa-rss-square" aria-hidden="true"></i>
+                        <i class="fa fa-rss-square" aria-hidden="true"></i>
+                    </div>
+                    <div class="name" data-text="Blog">Blog</div>
+                </a>
+            </li>
+           
         </ul>
     </div>
-    <div class="main">
-        <div class="Eth_green"></div>
-        <div class="Eth_yellow"></div>
-        <div class="Eth_red"></div>
-        <div class="Eth_circle"></div>
-        <div class="Eth_star">&#9956;</div>
-        <div class="line1">|</div>
-        <div class="line2">|</div>
-        <div class="line3">|</div>
-        <div class="line4">|</div>
-        <div class="line5">|</div>
-        <!-- Armenia flag -->
-        <div class="Armenia1"></div>
-        <div class="Armenia2"></div>
-        <div class="Armenia3"></div>
-        <!-- Indian flag -->
-        <div class="India1"></div>
-        <div class="India2">
+    <div class="container">
+
+    
+    <div id="AllFlags">
+        <div>
+            <div id="Ethiopia">
+                <div class="Eth_green"></div>
+                <div class="Eth_yellow">
+                    <div class="Eth_circle">
+                        <div class="Eth_star">&#9956;</div>
+                        <div class="line1">|</div>
+                        <div class="line2">|</div>
+                        <div class="line3">|</div>
+                        <div class="line4">|</div>
+                        <div class="line5">|</div>
+                    </div> 
+                </div>
+                <div class="Eth_red"></div>    
+            </div>
+        </div>
+        <div>
+             <!-- Armenia flag -->
+        <div id="Armenia">
+            <div class="Armenia1"></div>
+            <div class="Armenia2"></div>
+            <div class="Armenia3"></div>
+        </div>
+        </div>
+        <div>
+             <!-- Indian flag -->
+        <div id="India">
+            <div class="India1"></div>
+            <div class="India2">
             <div class="circle">
                 <div class="stripe1"></div>
                 <div class="stripe2"></div>
@@ -53,80 +110,143 @@
             </div>
         </div>
         <div class="India3"></div>
-        <!-- Germany flag -->
-        <div class="Germany1"></div>
-        <div class="Germany2"></div>
-        <div class="Germany3"></div>
-        <!-- Japan flag -->
-        <div class="Japan"></div>
-        <!-- Algeria flag -->
-        <div class="Algeria1"></div>
-        <div class="Algeria2"></div>
-        <div class="star">&starf;</div>
-        <div class="moon"></div>
-        <!-- Burkina Faso flag -->
-        <div class="burkina1"></div>
-        <div class="burkina2"></div>
-        <div class="burkinastar">&starf;</div>
-        <!-- Czech flag -->
-        <div class="Czech1"></div>
-        <div class="Czech2"></div>
-        <div class="Czech3"></div>
-        <!-- Honduras flag -->
-        <div class="honduras1"></div>
-        <div class="hond2"></div>
-        <div class="hond3"></div>
-        <div class="hond4">&starf;</div>
-        <div class="hond5">&starf;</div>
-        <div class="hond6">&starf;</div>
-        <div class="hond7">&starf;</div>
-        <div class="hond8">&starf;</div>
-        <!-- panama flag -->
-        <div class="panama"></div>
-        <div class="panama1"></div>
-        <div class="panama2"></div>
-        <div class="panama3"></div>
-        <div class="panama4">&starf;</div>
-        <div class="panama5">&starf;</div>
-        <!-- switzerland flag -->
-        <div class="switzerland"></div>
-        <!-- Sudan flag -->
-        <div class="sudan1"></div>
-        <div class="sudan2"></div>
-        <div class="sudan3"></div>
-        <div class="sudan"></div>
-        <!-- Liberia flag -->
-        <div class="liberia"></div>
-        <div class="liberia1"></div>
-        <div class="liberia2"></div>
-        <div class="liberia3"></div>
-        <div class="liberia4"></div>
-        <div class="liberia5"></div>
-        <div class="liberia6"></div>
-        <div class="liberia7"></div>
-        <div class="liberia8">&starf;</div>
-        <!-- Kuwait flag -->
-        <div class="kuwait"></div>
-        <div class="kuwait1"></div>
-        <div class="kuwait2"></div>
-        <div class="kuwait3"></div>
-        <!-- Israel flag -->
-        <div class="Israel1"></div>
-        <div class="Israel2"></div>
-        <div class="Israel3"></div>
-        <div class="Israel4">&#10017;</div>
-        <!-- Congo Flag -->
-        <div class="congo1"></div>
-        <div class="congo2"></div>
-        <div class="congo3"></div>
-        <div id="bottom">
+        </div>
+        </div>
+        <div>
+            <!-- Germany flag -->
+        <div id="Germany">
+            <div class="Germany1"></div>
+            <div class="Germany2"></div>
+            <div class="Germany3"></div>
+        </div>
+        </div>
+        <div>
+            <!-- Japan flag -->
+        <div id="Japan">
+            <div class="japan"></div>
+        </div>
+        </div>
+        <div>
+             <!-- Algeria flag -->
+        <div id="Algeria">
+            <div class="Algeria1"></div>
+            <div class="Algeria2"></div>
+            <div class="star">&starf;</div>
+            <div class="moon"></div>
+        </div>
+        </div>
+        <div>
+             <!-- Burkina Faso flag -->
+         <div id="Burkina">
+            <div class="burkina1"></div>
+            <div class="burkina2">
+                <div class="burkinastar">&starf;</div>
+            </div>
+            
+        </div>
+        </div>
+        <div>
+            <!-- Czech flag -->
+        <div id="Czech">
+            <div class="Czech1"></div>
+            <div class="Czech2"></div>
+            <div class="Czech3"></div>
+        </div>
+        </div>
+        <div>
+            <!-- Honduras flag -->
+        <div id="Honduras">
+            <div class="honduras1"></div>
+            <div class="hond2">
+                <div class="hond4">&starf;</div>
+                <div class="hond5">&starf;</div>
+                <div class="hond6">&starf;</div>
+                <div class="hond7">&starf;</div>
+                <div class="hond8">&starf;</div>
+            </div>
+            <div class="hond3"></div>
+            
+        </div>
+        </div>
+        <div>
+             <!-- panama flag -->
+        <div id="Panama">
+            <div class="panama"></div>
+            <div class="panama1"></div>
+            <div class="panama2"></div>
+            <div class="panama3"></div>
+            <div class="panama4">&starf;</div>
+            <div class="panama5">&starf;</div>
+        </div>
+        </div>
+        <div>
+            <!-- switzerland flag -->
+        <div id="Switzerland">
+            <div class="switzerland"></div>
+            <div class="switzerland1"></div>
+        </div>
+        </div>
+        <div>
+             <!-- Sudan flag -->
+        <div id="Sudan">
+            <div class="sudan1"></div>
+            <div class="sudan2"></div>
+            <div class="sudan3"></div>
+            <div class="sudan"></div>
+        </div>
+        </div>
+        <div>
+             <!-- Liberia flag -->
+        <div id="Liberia">
+            <div class="liberia"></div>
+            <div class="liberia1"></div>
+            <div class="liberia2"></div>
+            <div class="liberia3"></div>
+            <div class="liberia4"></div>
+            <div class="liberia5"></div>
+            <div class="liberia6"></div>
+            <div class="liberia7">&starf;</div>
+        </div>
+        </div>
+        <div>
+            <!-- Kuwait flag -->
+        <div id="Kuwait">
+            <div class="kuwait"></div>
+            <div class="kuwait1"></div>
+            <div class="kuwait2"></div>
+            <div class="kuwait3"></div>
+        </div>
+        </div>
+        <div>
+            <!-- Israel flag -->
+        <div id="Israel">
+            <div class="Israel1"></div>
+            <div class="Israel2">
+                <div class="Israel4">&#10017;</div>
+            </div>
+            <div class="Israel3"></div>
+            
+        </div>
+        </div>
+        <div>
+            <!-- Congo Flag -->
+        <div id="Congo">
+            <div class="congo1"></div>
+            <div class="congo2"></div>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="Footer">
+        <div class="bottom">
             <a href="https://www.facebook.com/" target="_blank" >Facebook</a> |
             <a href="https://twitter.com/login" target="_blank" >Twitter</a>
         </div>
-        <div id="copyright">
-            <label>Developed by Biruk Ayalew &copy;2020</label>
+        <div class="copyright">
+            <p>Developed by <a href="index.html" target="_blank" >Biruk Ayalew</a> &copy;2020</p>
         </div>
     </div>
+
     
 </body>
 </html>
